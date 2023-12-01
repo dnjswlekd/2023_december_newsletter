@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 body,
 div,
 span {
@@ -8,14 +14,41 @@ span {
 .snow {
   width: 100%;
   height: 100vh;
-  background-image: url(https://i.pinimg.com/originals/66/1f/b9/661fb90d1e3b7d1b9cedabac129c30ee.jpg);
+  background-image: url(https://i.pinimg.com/originals/07/1f/d5/071fd5e21a3bddebf9a02632fa64e0e7.jpg);
   background-size: cover;
-  transform: scale(1.1)
+  transform: scale(1.1);
+  position: relative;
 }
 
 #canv {
     width: 100%;
 }
+
+.snow-title-text {
+  font-size: 100px;
+    position: absolute;
+    top: 29%;
+    /* left: 50%; */
+    transform: translate( -50%, -50% );
+    color: white;
+    transform: rotate(90deg);
+  }
+
+.snow-title-text .merry {
+  color: #bd2824;
+}
+.snow-title-text .christmas {
+  color: #074d2a;
+}
+
+.snow-title-text p {
+  font-size: 30px;
+   font-family: 'KCC-Ganpan';
+   font-weight: 300;
+   color: #f1e3c6;
+}
+
+
 
 
 /*# sourceMappingURL=style.css.map */
@@ -25,7 +58,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: #333;
-  height: 3000px;
+  /* height: 3000px; */
 }
 a {
   text-decoration: none;
@@ -56,16 +89,17 @@ header > .inner {
 }
 
 header .logo {
-  height: 75px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+    height: 75px;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    right: -20px;
+    transform: rotate(89deg);
 }
 
 header .logo > img {
-    width: 82px;
-    margin: 21px;
+        width: 47px;
+    margin: 32px;
 }
 
 header .sub-menu {
