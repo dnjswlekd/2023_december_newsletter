@@ -17,7 +17,7 @@ span {
   width: 100%;
   height: 100vh;
   /* background-image: url(https://i.pinimg.com/originals/07/1f/d5/071fd5e21a3bddebf9a02632fa64e0e7.jpg); */
-  background-image: url(https://i.pinimg.com/564x/b9/80/e1/b980e19e796bac9b6f9ab08650d47646.jpg);
+  background-image: url(https://i.pinimg.com/736x/ed/bb/1b/edbb1bf7b3a26ae3c51a0c415ba77ef0.jpg);
   background-size: cover;
   transform: scale(1.1);
   position: relative;
@@ -31,7 +31,7 @@ span {
 .snow-title-text {
   font-size: 70px;
   position: absolute;
-  top: 32%;
+  top: 25%;
   left: 10%;
   /* transform: translate(-50%, -50%); */
   color: white;
