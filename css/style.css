@@ -49,7 +49,7 @@ span {
   .snow .snow-title-text {
     font-size: 88px;
     position: absolute;
-    top: 31%;
+    top: 16%;
     color: white;
     width: 100%;
     text-align: center;
@@ -129,7 +129,7 @@ body {
   line-height: 1.4;
   color: #333;
   /* height: 3000px; */
-  background: url(https://i.pinimg.com/564x/08/e0/4d/08e04d2a99f3cfd9834c5d6a383b55be.jpg)
+  background: url(https://i.pinimg.com/originals/de/9f/ee/de9feebc43c4429a4ccde126694aa495.jpg)
     no-repeat fixed;
   background-size: cover;
   height: 100vh;
