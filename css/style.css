@@ -5,6 +5,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body,
 div,
 span {
@@ -33,7 +42,7 @@ span {
     top: 22%;
     color: white;
     width: 100%;
-    text-algin: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -43,7 +52,7 @@ span {
     top: 15%;
     color: white;
     width: 100%;
-    text-algin: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 320px) {
@@ -53,7 +62,7 @@ span {
     top: 16%;
     color: white;
     width: 100%;
-    text-algin: center;
+    text-align: center;
   }
 }
 
@@ -62,24 +71,24 @@ span {
 }
 
 .snow-title-text {
-  font-size: 70px;
+  font-size: 200px;
   position: absolute;
-  top: 16%;
+  top: 40%;
   /* left: 10%; */
   /* transform: translate(-50%, -50%); */
   color: white;
   /* transform: rotate(90deg); */
   width: 100%;
-  text-algin: center;
+  text-align: center;
 }
 
 .snow-title-text .merry {
   color: #bd2824;
-  animation: merry 3s infinite ease-in-out;
+  animation: merry 4s infinite ease;
 }
 .snow-title-text .christmas {
   color: #074d2a;
-  animation: christmas 3s infinite ease-in-out;
+  animation: christmas 4s infinite ease;
 }
 
 @keyframes merry {
@@ -192,6 +201,7 @@ header .sub-menu .menu li {
   background: #bd2824;
   display: grid;
   place-items: center;
+  font-family: 'KCC-Ganpan';
 }
 
 .top img {
@@ -199,9 +209,10 @@ header .sub-menu .menu li {
   height: auto;
 }
 
-.top span {
+.top div {
   color: #fff;
   font-size: 24px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .top img:nth-child(1) {
@@ -219,6 +230,8 @@ header .sub-menu .menu li {
   height: 100vh;
   background: #074d2a;
   position: relative;
+  margin-top: 100px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .bottom {
@@ -226,6 +239,8 @@ header .sub-menu .menu li {
   height: 100vh;
   background: #f1e3c6;
   position: relative;
+  margin-top: 100px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .middle span {
