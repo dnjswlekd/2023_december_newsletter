@@ -203,7 +203,6 @@ header .sub-menu .menu li {
   background: #bd2824;
   display: grid;
   place-items: center;
-  font-family: 'KCC-Ganpan';
 }
 
 .top img {
@@ -261,4 +260,16 @@ header .sub-menu .menu li {
 audio {
   display: block;
   margin: 0 auto;
+}
+
+.section-top {
+  width: 100%;
+  height: 50vh;
+  background: #bd2824;
+}
+
+.section-bottom {
+  width: 100%;
+  height: 50vh;
+  background: #074d2a;
 }
