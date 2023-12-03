@@ -132,6 +132,7 @@ body {
   background: url(https://i.pinimg.com/originals/f8/b5/7a/f8b57aa7ecb86eded295657e5b0b5f0e.jpg)
     no-repeat fixed;
   background-size: cover;
+  height: 100vh;
 }
 a {
   text-decoration: none;
