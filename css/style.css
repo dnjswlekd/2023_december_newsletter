@@ -17,26 +17,60 @@ span {
   width: 100%;
   height: 100vh;
   /* background-image: url(https://i.pinimg.com/originals/07/1f/d5/071fd5e21a3bddebf9a02632fa64e0e7.jpg); */
-  background-image: url(https://i.pinimg.com/736x/ed/bb/1b/edbb1bf7b3a26ae3c51a0c415ba77ef0.jpg);
   background-size: cover;
   transform: scale(1.1);
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  header .logo {
+    left: 30px;
+  }
+
+  .snow .snow-title-text {
+    font-size: 122px;
+    position: absolute;
+    top: 22%;
+    color: white;
+    width: 100%;
+    text-algin: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .snow .snow-title-text {
+    font-size: 80px;
+    position: absolute;
+    top: 15%;
+    color: white;
+    width: 100%;
+    text-algin: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .snow .snow-title-text {
+    font-size: 45px;
+    position: absolute;
+    top: 16%;
+    color: white;
+    width: 100%;
+    text-algin: center;
+  }
+}
+
 #canv {
   width: 100%;
-  background: rgb(0, 0, 0, 0.5);
 }
 
 .snow-title-text {
   font-size: 70px;
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 16%;
+  /* left: 10%; */
   /* transform: translate(-50%, -50%); */
   color: white;
   /* transform: rotate(90deg); */
-  width: 450px;
+  width: 100%;
+  text-algin: center;
 }
 
 .snow-title-text .merry {
@@ -86,6 +120,9 @@ body {
   line-height: 1.4;
   color: #333;
   /* height: 3000px; */
+  background: url(https://i.pinimg.com/736x/f8/b5/7a/f8b57aa7ecb86eded295657e5b0b5f0e.jpg)
+    no-repeat fixed;
+  background-size: cover;
 }
 a {
   text-decoration: none;
