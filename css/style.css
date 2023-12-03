@@ -133,6 +133,7 @@ body {
     no-repeat fixed;
   background-size: cover;
   height: 100vh;
+  padding-top: env(safe-area-inset-top);
 }
 a {
   text-decoration: none;
