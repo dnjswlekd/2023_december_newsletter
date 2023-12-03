@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-    
-     <link rel="icon" href="./images/favicon.ico" />
+
+    <link rel="icon" href="./images/favicon.ico" />
 
     <!-- Google Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -21,62 +21,62 @@
 <body>
     <div class="snow">
         <canvas id="canv"></canvas>
-        <div  class="snow-title-text">
-          <div>
-             <h1 class="merry">Merry </h1>
-              <h1 class="christmas">christmas !</h1>
-              </div>
-              <div>
-              <!-- <p>날씨는 춥지만</br> 마음은 따뜻한 크리스마스 되시고</br>
+        <div class="snow-title-text">
+            <div>
+                <h1 class="merry">Merry </h1>
+                <h1 class="christmas">Christmas !</h1>
+            </div>
+            <div>
+                <!-- <p>날씨는 춥지만</br> 마음은 따뜻한 크리스마스 되시고</br>
 크리스마스의 행복과 기쁨이</br>함께하길 바라요 :)</p>
 </div> -->
-           </div>
-    </div>
+            </div>
+        </div>
 
-    <!-- HEADER -->
-    <header>
-        <a href="/" class="logo">
-            <img src="./images/e3ts_logo_gray.png" alt="E3TS">
-        </a>
-    </header>
-    <!-- <video autoplay controls loop muted poster="aaa" preload="bbb">
+        <!-- HEADER -->
+        <header>
+            <a href="/" class="logo">
+                <img src="./images/e3ts_logo_gray.png" alt="E3TS">
+            </a>
+        </header>
+        <!-- <video autoplay controls loop muted poster="aaa" preload="bbb">
         <source src="./videos/lighted_christmas_tree (Original).mp4" type="yyy">
     </video> -->
-    <!-- <section class="top">
+        <!-- <section class="top">
         <img src="https://i.pinimg.com/564x/e6/c1/fd/e6c1fd20ad3ff81a73b55b029e42f115.jpg" alt="christmas">
         <img src="https://i.pinimg.com/564x/3d/5d/7f/3d5d7fde29456d6c06621951cba960a9.jpg" alt="christmas">
         <span>Merry Christas</span>
     </section> -->
-    <!-- <section class="middle">
+        <!-- <section class="middle">
         <span class="title">GOOD BYE 2023</span>
     </section>
     <section class="bottom">
         <span class="title">HELLO 2024</span>
     </section> -->
 
-    <script>
-        function Snowy() {
-            function t() {
-                window.requestAnimationFrame(t), $.clearRect(0, 0, w, h), $.fillStyle = "hsla(255,255%,255%,0)", $.fillRect(0, 0, w, h), $.fill();
-                for (var i = 0; i < a.length; ++i) f = a[i], f.t += .05, f.t = f.t >= 2 * Math.PI ? 0 : f.t, f.y += f.sp, f.x += Math.sin(f.t * s) * (.3 * f.sz), f.y > h + 50 && (f.y = -10 - Math.random() * r), f.x > w + r && (f.x = -r), f.x < -r && (f.x = w + r), f.draw()
-            }
-
-            function i() {
-                this.draw = function () {
-                    this.g = $.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.sz), this.g.addColorStop(0, "hsla(255,255%,255%,1)"), this.g.addColorStop(1, "hsla(255,255%,255%,0)"), $.moveTo(this.x, this.y), $.fillStyle = this.g, $.beginPath(), $.arc(this.x, this.y, this.sz, 0, 2 * Math.PI, !0), $.fill()
+        <script>
+            function Snowy() {
+                function t() {
+                    window.requestAnimationFrame(t), $.clearRect(0, 0, w, h), $.fillStyle = "hsla(255,255%,255%,0)", $.fillRect(0, 0, w, h), $.fill();
+                    for (var i = 0; i < a.length; ++i) f = a[i], f.t += .05, f.t = f.t >= 2 * Math.PI ? 0 : f.t, f.y += f.sp, f.x += Math.sin(f.t * s) * (.3 * f.sz), f.y > h + 50 && (f.y = -10 - Math.random() * r), f.x > w + r && (f.x = -r), f.x < -r && (f.x = w + r), f.draw()
                 }
+
+                function i() {
+                    this.draw = function () {
+                        this.g = $.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.sz), this.g.addColorStop(0, "hsla(255,255%,255%,1)"), this.g.addColorStop(1, "hsla(255,255%,255%,0)"), $.moveTo(this.x, this.y), $.fillStyle = this.g, $.beginPath(), $.arc(this.x, this.y, this.sz, 0, 2 * Math.PI, !0), $.fill()
+                    }
+                }
+                for (var n, a = [], e = 300, s = 1, o = 1, d = 1.3, r = 20, l = 1, c = 0; c < e; ++c) n = new i, n.y = Math.random() * (h + 50), n.x = Math.random() * w, n.t = Math.random() * (2 * Math.PI), n.sz = 100 / (10 + 100 * Math.random()) * d, n.sp = .15 * Math.pow(.8 * n.sz, 2) * o, n.sp = n.sp < l ? l : n.sp, a.push(n);
+                t()
             }
-            for (var n, a = [], e = 300, s = 1, o = 1, d = 1.3, r = 20, l = 1, c = 0; c < e; ++c) n = new i, n.y = Math.random() * (h + 50), n.x = Math.random() * w, n.t = Math.random() * (2 * Math.PI), n.sz = 100 / (10 + 100 * Math.random()) * d, n.sp = .15 * Math.pow(.8 * n.sz, 2) * o, n.sp = n.sp < l ? l : n.sp, a.push(n);
-            t()
-        }
-        var c = document.getElementById("canv"),
-            $ = c.getContext("2d"),
-            w = c.width = window.innerWidth,
-            h = c.height = window.innerHeight;
-        Snowy(), window.addEventListener("resize", function () {
-            c.width = w = window.innerWidth, c.height = h = window.innerHeight
-        }, !1)
-    </script>
+            var c = document.getElementById("canv"),
+                $ = c.getContext("2d"),
+                w = c.width = window.innerWidth,
+                h = c.height = window.innerHeight;
+            Snowy(), window.addEventListener("resize", function () {
+                c.width = w = window.innerWidth, c.height = h = window.innerHeight
+            }, !1)
+        </script>
 </body>
 
 </html>

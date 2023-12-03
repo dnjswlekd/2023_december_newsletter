@@ -1,8 +1,9 @@
 @font-face {
-    font-family: 'KCC-Ganpan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'KCC-Ganpan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 body,
 div,
@@ -15,43 +16,67 @@ span {
 .snow {
   width: 100%;
   height: 100vh;
-  background-image: url(https://i.pinimg.com/originals/07/1f/d5/071fd5e21a3bddebf9a02632fa64e0e7.jpg);
+  /* background-image: url(https://i.pinimg.com/originals/07/1f/d5/071fd5e21a3bddebf9a02632fa64e0e7.jpg); */
+  background-image: url(https://i.pinimg.com/564x/b9/80/e1/b980e19e796bac9b6f9ab08650d47646.jpg);
   background-size: cover;
   transform: scale(1.1);
   position: relative;
 }
 
 #canv {
-    width: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.5);
 }
 
 .snow-title-text {
-  font-size: 100px;
-    position: absolute;
-    top: 29%;
-    /* left: 50%; */
-    transform: translate( -50%, -50% );
-    color: white;
-    transform: rotate(90deg);
-    width: 450px;
-  }
+  font-size: 70px;
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
+  color: white;
+  /* transform: rotate(90deg); */
+  width: 450px;
+}
 
 .snow-title-text .merry {
   color: #bd2824;
+  animation: merry 3s infinite ease-in-out;
 }
 .snow-title-text .christmas {
   color: #074d2a;
+  animation: christmas 3s infinite ease-in-out;
+}
+
+@keyframes merry {
+  25% {
+    color: #bd2824;
+  }
+  50% {
+    color: #bd2824;
+  }
+  75% {
+    color: #074d2a;
+  }
+}
+@keyframes christmas {
+  25% {
+    color: #074d2a;
+  }
+  50% {
+    color: #074d2a;
+  }
+  75% {
+    color: #bd2824;
+  }
 }
 
 .snow-title-text p {
   font-size: 30px;
-   font-family: 'KCC-Ganpan';
-   font-weight: 300;
-   color: #f1e3c6;
+  font-family: 'KCC-Ganpan';
+  font-weight: 300;
+  color: #f1e3c6;
 }
-
-
-
 
 /*# sourceMappingURL=style.css.map */
 body {
@@ -91,17 +116,17 @@ header > .inner {
 }
 
 header .logo {
-    height: 75px;
-    position: absolute;
-    top: 40px;
-    bottom: 0;
-    right: -20px;
-    transform: rotate(89deg);
+  height: 75px;
+  position: absolute;
+  top: 33px;
+  bottom: 0;
+  left: 9px;
+  /* transform: rotate(89deg); */
 }
 
 header .logo > img {
-        width: 47px;
-    margin: 32px;
+  width: 47px;
+  margin: 32px;
 }
 
 header .sub-menu {
@@ -125,23 +150,22 @@ header .sub-menu .menu li {
 }
 
 .top {
-      width: 100%;
-      height: 100vh;
-      background: #bd2824;
-      display: grid;
-      place-items: center;
-    }
+  width: 100%;
+  height: 100vh;
+  background: #bd2824;
+  display: grid;
+  place-items: center;
+}
 
-    .top img {
-      max-width: 100%;
-      height: auto;
-    }
+.top img {
+  max-width: 100%;
+  height: auto;
+}
 
-    .top span {
-      color: #fff;
-      font-size: 24px;
-    }
-
+.top span {
+  color: #fff;
+  font-size: 24px;
+}
 
 .top img:nth-child(1) {
   top: 12%;
