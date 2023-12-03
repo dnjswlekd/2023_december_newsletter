@@ -47,9 +47,9 @@ span {
 }
 @media screen and (max-width: 768px) {
   .snow .snow-title-text {
-    font-size: 80px;
+    font-size: 100px;
     position: absolute;
-    top: 15%;
+    top: 50%;
     color: white;
     width: 100%;
     text-align: center;
@@ -129,7 +129,7 @@ body {
   line-height: 1.4;
   color: #333;
   /* height: 3000px; */
-  background: url(https://i.pinimg.com/originals/f8/b5/7a/f8b57aa7ecb86eded295657e5b0b5f0e.jpg)
+  background: url(https://i.pinimg.com/originals/5b/24/5b/5b245b6061b0091e627672742cd24158.jpg)
     no-repeat fixed;
   background-size: cover;
   height: 100vh;
