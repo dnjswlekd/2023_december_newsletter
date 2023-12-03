@@ -255,3 +255,8 @@ header .sub-menu .menu li {
   left: 50%;
   font-size: 150px;
 }
+
+audio {
+  display: block;
+  margin: 20px auto;
+}
